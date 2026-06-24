@@ -26,6 +26,7 @@ Ejecutar el proyecto en modo desarrollo:
 npm run dev
 Abrir en el navegador la dirección indicada por Vite, generalmente:
 http://localhost:5173
+
 Objetivo académico
 
 Este proyecto tiene fines exclusivamente educativos y forma parte de las actividades prácticas de la asignatura Programación III de la Tecnicatura Universitaria en Programación de la Universidad Tecnológica Nacional (UTN).
