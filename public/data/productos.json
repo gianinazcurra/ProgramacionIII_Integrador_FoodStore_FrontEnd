@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "nombre": "Hamburguesa Triple Cheddar",
+    "precio": 2500,
+    "categoria": "Hamburguesas",
+    "imagen": "/src/assets/HAMBURGUESA.jpg",
+    "descripcion": "Hamburguesa triple con cheddar",
+    "stock": 10,
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 1
+  },
+  {
+    "id": 2,
+    "nombre": "Hamburguesa Clásica",
+    "precio": 2500,
+    "categoria": "Hamburguesas",
+    "imagen": "/src/assets/hamburguesa-clasica.jpg",
+    "descripcion": "Hamburguesa clásica",
+    "stock": 10,
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 1
+  },
+  {
+    "id": 3,
+    "nombre": "Hamburguesa Veggie",
+    "precio": 4200,
+    "categoria": "Hamburguesas",
+    "imagen": "/src/assets/Hamburguesas-veganas-de-batata-y-alubias-4.jpg",
+    "descripcion": "Hamburguesa vegetariana",
+    "stock": 10,
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 1
+  },
+  {
+    "id": 4,
+    "nombre": "Pizza Muzzarella",
+    "precio": 8000,
+    "categoria": "Pizza",
+    "imagen": "/src/assets/PIZZA.jpg",
+    "descripcion": "Pizza de muzzarella",
+    "stock": 10,
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 2
+  },
+  {
+    "id": 5,
+    "nombre": "Pizza Especial",
+    "precio": 12000,
+    "categoria": "Pizza",
+    "imagen": "/src/assets/pizza-especial.jpg",
+    "descripcion": "Pizza especial",
+    "stock": 10,
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 2
+  },
+  {
+    "id": 6,
+    "nombre": "Pizza Fugazzetta",
+    "precio": 12000,
+    "categoria": "Pizza",
+    "imagen": "/src/assets/fugazzetta.jpg",
+    "descripcion": "Pizza fugazzetta",
+    "stock": 10,
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 2
+  },
+  {
+    "id": 7,
+    "nombre": "Papas Fritas",
+    "precio": 3000,
+    "categoria": "Papas",
+    "imagen": "/src/assets/papasfritas.jpg",
+    "descripcion": "Porción de papas fritas",
+    "stock": 10,
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 3
+  },
+  {
+    "id": 8,
+    "nombre": "Papas Cheddar y Bacon",
+    "precio": 5000,
+    "categoria": "Papas",
+    "imagen": "/src/assets/papas.jpg",
+    "descripcion": "Papas con cheddar y bacon",
+    "stock": 10,
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 3
+  },
+  {
+    "id": 9,
+    "nombre": "Empanadas",
+    "precio": 2500,
+    "categoria": "Empanadas",
+    "imagen": "/src/assets/Empanadas.jpg",
+    "descripcion": "Empanadas surtidas",
+    "stock": 10,
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 4
+  },
+  {
+    "id": 10,
+    "nombre": "Empanadas de Jamón y Queso",
+    "precio": 2500,
+    "categoria": "Empanadas",
+    "imagen": "/src/assets/empanada-jyq.png",
+    "descripcion": "Empanadas de jamón y queso",
+    "stock": 10,
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 4
+  }
+]

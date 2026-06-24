@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nombre": "Hamburguesas",
+    "descripcion": "Hamburguesas artesanales",
+    "imagen": "/src/assets/HAMBURGUESA.jpg",
+    "eliminado": false
+  },
+  {
+    "id": 2,
+    "nombre": "Pizza",
+    "descripcion": "Pizzas caseras",
+    "imagen": "/src/assets/PIZZA.jpg",
+    "eliminado": false
+  },
+  {
+    "id": 3,
+    "nombre": "Papas",
+    "descripcion": "Papas fritas y acompañamientos",
+    "imagen": "/src/assets/papasfritas.jpg",
+    "eliminado": false
+  },
+  {
+    "id": 4,
+    "nombre": "Empanadas",
+    "descripcion": "Empanadas surtidas",
+    "imagen": "/src/assets/Empanadas.jpg",
+    "eliminado": false
+  }
+]
