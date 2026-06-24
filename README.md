@@ -1,27 +1,32 @@
-<<<<<<< HEAD
-# Food Store
-
-Proyecto web desarrollado con Vite, TypeScript, HTML y CSS.
-
-La aplicación permite registrar usuarios, iniciar sesión, visualizar productos, buscar y filtrar productos por categoría, agregar productos al carrito y mantener la información usando Local Storage.
-
-## Instrucciones para ejecutar el proyecto
-
-1. Descargar o descomprimir el proyecto.
-2. Abrir la carpeta en Visual Studio Code.
-3. Abrir la terminal.
-4. Instalar las dependencias con:
-
-pnpm install
-pnpm dev
-
-5. Ejecutar el proyecto con:
-
-npm run dev
-
-6. Abrir el enlace que aparece en la terminal:
-
-http://localhost:5173
-=======
 # ProgramacionIII_Integrador_FoodStore_FrontEnd
->>>>>>> f494a20414726c40ca34ed1f9ca99faea54790c5
+
+Este proyecto fue desarrollado como parte del Trabajo Integrador de la Tecnicatura Universitaria en Programación de la Universidad Tecnológica Nacional (UTN).
+
+La aplicación simula una tienda virtual de comidas y permite gestionar productos, categorías, usuarios, pedidos y carrito de compras. El objetivo principal es aplicar los conceptos de desarrollo frontend utilizando HTML, CSS, TypeScript y Vite, consumiendo información desde archivos JSON mediante fetch(), simulando el comportamiento de una futura API REST.
+
+El sistema contempla dos tipos de usuarios:
+
+Administrador: acceso al panel de administración para la gestión de información del sistema.
+Cliente: acceso al catálogo de productos, carrito de compras y visualización de pedidos realizados.
+
+Las funcionalidades implementadas incluyen autenticación de usuarios, carga dinámica de productos y categorías desde archivos JSON, filtrado de productos, gestión de carrito mediante localStorage y visualización de pedidos asociados al usuario autenticado.
+
+Tecnologías utilizadas
+HTML5
+CSS3
+TypeScript
+Vite
+JSON
+LocalStorage
+Instalación y ejecución
+Clonar el repositorio.
+Instalar las dependencias:
+npm install
+Ejecutar el proyecto en modo desarrollo:
+npm run dev
+Abrir en el navegador la dirección indicada por Vite, generalmente:
+http://localhost:5173
+Objetivo académico
+
+Este proyecto tiene fines exclusivamente educativos y forma parte de las actividades prácticas de la asignatura Programación III de la Tecnicatura Universitaria en Programación de la Universidad Tecnológica Nacional (UTN).
+
