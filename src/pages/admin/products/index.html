@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/admin.css" />
+  <title>Gestión de Productos</title>
+</head>
+<body>
+
+<header>
+  <h1>Food Store - Administración</h1>
+  <nav>
+    <a href="../adminHome/index.html">Dashboard</a>
+    <a href="../categories/index.html">Categorías</a>
+    <a href="./index.html">Productos</a>
+    <a href="../orders/index.html">Pedidos</a>
+    <button id="logoutBtn">Cerrar sesión</button>
+  </nav>
+</header>
+
+<hr>
+
+<h2>Gestión de Productos</h2>
+
+<button id="abrirModalProducto" type="button">+ Nuevo Producto</button>
+
+<br><br>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Imagen</th>
+      <th>Nombre</th>
+      <th>Descripción</th>
+      <th>Precio</th>
+      <th>Categoría</th>
+      <th>Stock</th>
+      <th>Estado</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody id="productosTableBody"></tbody>
+</table>
+
+<div id="modalProducto" style="display:none; border:1px solid black; padding:15px; margin-top:20px;">
+  <h3 id="tituloModalProducto">Nuevo Producto</h3>
+
+  <form id="formProducto">
+    <label>Nombre</label><br>
+    <input type="text" id="nombre" required><br><br>
+
+    <label>Descripción</label><br>
+    <textarea id="descripcion" required></textarea><br><br>
+
+    <label>Precio</label><br>
+    <input type="number" id="precio" required><br><br>
+
+    <label>Stock</label><br>
+    <input type="number" id="stock" required><br><br>
+
+    <label>Categoría</label><br>
+    <select id="categoria" required></select><br><br>
+
+    <label>URL de Imagen</label><br>
+    <input type="text" id="imagen" required><br><br>
+
+    <label>
+      <input type="checkbox" id="disponible" checked>
+      Producto disponible
+    </label><br><br>
+
+    <button type="submit">Guardar</button>
+    <button type="button" id="cerrarModalProducto">Cancelar</button>
+  </form>
+</div>
+
+<script type="module" src="./products.ts"></script>
+</body>
+</html>

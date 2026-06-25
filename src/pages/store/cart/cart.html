@@ -5,12 +5,28 @@
    <link rel="stylesheet" href="/src/style.css" />
   <title>Carrito</title>
 </head>
-<body>
-  <div class="cart-container">
-  <h1>Carrito</h1>
 
+
+  <body>
+    <div class="cliente-page">
+      <header class="cliente-header">
+        <h1>Food Store</h1>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="/src/pages/client/index.html">Inicio</a></li>
+            <li><a href="/src/pages/client/orders.html">Mis Pedidos</a></li>
+            <li><a href="/src/pages/store/cart/cart.html">Carrito</a></li>
+            <li><a href="/src/pages/admin/index.html">Panel de Administración</a></li>
+          
+          </ul>
+        </nav>
+          <button id="logoutBtn" type="button">Cerrar sesión</button>
+      </header>
+<h3>Mi Carrito</h3>
+<section class="cart-layout">
   <div id="cartContainer"></div>
-
+  <aside id="cartResumen" class="cart-resumen"></aside>
+</section>
   <a href="/src/pages/store/home/home.html">Volver al catálogo</a>
 </div>
   <script type="module" src="./cart.ts"></script>

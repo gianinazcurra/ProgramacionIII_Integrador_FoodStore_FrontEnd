@@ -1,4 +1,5 @@
 const cartContainer = document.getElementById("cartContainer") as HTMLDivElement;
+const cartResumen = document.getElementById("cartResumen") as HTMLElement;
 
 const getCart = () => {
   return JSON.parse(localStorage.getItem("cart") || "[]");
@@ -13,6 +14,7 @@ const renderCart = () => {
 
   if (cart.length === 0) {
     cartContainer.innerHTML = "<p>El carrito está vacío</p>";
+    cartResumen.innerHTML = "";
     return;
   }
 
@@ -29,9 +31,9 @@ const renderCart = () => {
         <h3>${item.nombre}</h3>
         <p>Precio unitario: $${item.precio}</p>
 
-        <button class="decrease" data-id="${item.id}">-</button>
+        <button class="decrease" data-id="${item.id}" type="button">-</button>
         <span>Cantidad: ${item.cantidad}</span>
-        <button class="increase" data-id="${item.id}">+</button>
+        <button class="increase" data-id="${item.id}" type="button">+</button>
 
         <p>Subtotal: $${subtotal}</p>
         <hr>
@@ -39,7 +41,26 @@ const renderCart = () => {
     `;
   });
 
-  cartContainer.innerHTML += `<h2>Total: $${total}</h2>`;
+  const envio = total > 0 ? 500 : 0;
+  const totalFinal = total + envio;
+
+  cartResumen.innerHTML = `
+    <h3>Resumen del pedido</h3>
+    <p>Subtotal: $${total}</p>
+    <p>Envío: $${envio}</p>
+    <hr>
+    <h3>Total: $${totalFinal}</h3>
+
+    <button id="procederPagoBtn" type="button">
+      Proceder al pago
+    </button>
+
+    <button id="vaciarCarritoBtn" class="btn-vaciar" type="button">
+  Vaciar carrito
+</button>
+      Vaciar carrito
+    </button>
+  `;
 
   addCartEvents();
 };
@@ -47,8 +68,9 @@ const renderCart = () => {
 const addCartEvents = () => {
   const increaseButtons = document.querySelectorAll(".increase");
   const decreaseButtons = document.querySelectorAll(".decrease");
+  const vaciarCarritoBtn = document.getElementById("vaciarCarritoBtn");
 
-  increaseButtons.forEach(button => {
+  increaseButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const id = Number((button as HTMLButtonElement).dataset.id);
       const cart = getCart();
@@ -64,7 +86,7 @@ const addCartEvents = () => {
     });
   });
 
-  decreaseButtons.forEach(button => {
+  decreaseButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const id = Number((button as HTMLButtonElement).dataset.id);
       let cart = getCart();
@@ -82,6 +104,11 @@ const addCartEvents = () => {
       saveCart(cart);
       renderCart();
     });
+  });
+
+  vaciarCarritoBtn?.addEventListener("click", () => {
+    localStorage.removeItem("cart");
+    renderCart();
   });
 };
 

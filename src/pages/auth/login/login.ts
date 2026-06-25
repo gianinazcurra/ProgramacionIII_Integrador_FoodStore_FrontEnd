@@ -26,7 +26,7 @@ form.addEventListener("submit", async (e) => {
   saveUserSession(user);
 
   if (user.role === "admin") {
-    navigateTo("/src/pages/admin/index.html");
+    navigateTo("/src/pages/admin/adminhome/index.html");
   } else {
     navigateTo("/src/pages/client/index.html");
   }

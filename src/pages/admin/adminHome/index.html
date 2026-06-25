@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/admin.css" />
+    <title>Admin</title>
+  </head>
+  <body>
+  <header class="admin-header">
+    <h1>Food Store</h1>
+    <nav>
+          <ul class="nav-list">
+            <li><a href="/src/pages/auth/login/index.html">Inicio</a></li>
+            <li><a href="/src/pages/client/orders.html">Mis Pedidos</a></li>
+            <li><a href="/src/pages/store/cart/cart.html">Carrito</a></li>
+            <li><a href="/src/pages/admin/adminhome/index.html">Panel de Administración</a></li>
+          
+          </ul>
+        </nav>
+          
+    <button id="logoutBtn" class="btn-logout">Cerrar sesión</button>
+  </header>
+
+  <main class="admin-layout">
+    <aside class="sidebar">
+      <h3>Panel de Control</h3>
+
+      <a href="./index.html">Dashboard</a>
+      <a href="../products/index.html">Productos</a>
+      <a href="../categories/index.html">Categorías</a>
+      <a href="../orders/index.html">Pedidos</a>
+      <a href="../../store/home/index.html">Ver tienda</a>
+    </aside>
+
+    <section class="admin-content">
+      <h2>Panel de Administración</h2>
+
+      <div class="stats-grid">
+        <article class="stat-card">
+          <p>Categorías</p>
+          <h3 id="totalCategorias">0</h3>
+        </article>
+
+        <article class="stat-card">
+          <p>Productos</p>
+          <h3 id="totalProductos">0</h3>
+        </article>
+
+        <article class="stat-card">
+          <p>Usuarios</p>
+          <h3 id="totalUsuarios">0</h3>
+        </article>
+
+        <article class="stat-card">
+          <p>Pedidos</p>
+          <h3 id="totalPedidos">0</h3>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./admin.ts"></script>
+</body>
+</html>

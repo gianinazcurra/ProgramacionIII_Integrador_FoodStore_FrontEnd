@@ -6,10 +6,27 @@
 
   <title>Food Store</title>
 </head>
+<div id="modalDetalleProducto" class="modal-producto">
+  <div class="modal-producto-contenido">
+    <button id="cerrarModalProducto" type="button">X</button>
+    <div id="detalleProductoContainer"></div>
+  </div>
+</div>
 <body>
-
- 
-  <h1>Catálogo</h1>
+  <header class="cliente-header">
+        <h1>Food Store</h1>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="/src/pages/client/index.html">Inicio</a></li>
+            <li><a href="/src/pages/client/orders.html">Mis Pedidos</a></li>
+            <li><a href="/src/pages/store/cart/cart.html">Carrito</a></li>
+            <li><a href="/src/pages/admin/index.html">Panel de Administración</a></li>
+          
+          </ul>
+        </nav>
+          <button id="logoutBtn" type="button">Cerrar sesión</button>
+      </header>
+  <h2>Catálogo</h2>
 
   <input id="searchInput" type="text" placeholder="Buscar producto..." />
 <select id="categorySelect">

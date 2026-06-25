@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/admin.css" />
+  <title>Gestión de Categorías</title>
+</head>
+<body>
+
+<header>
+  <h1>Food Store - Administración</h1>
+  <nav>
+    <a href="../adminHome/index.html">Dashboard</a>
+    <a href="./index.html">Categorías</a>
+    <a href="../products/index.html">Productos</a>
+    <a href="../orders/index.html">Pedidos</a>
+    <button id="logoutBtn">Cerrar sesión</button>
+  </nav>
+</header>
+
+<hr>
+
+<h2>Gestión de Categorías</h2>
+
+<button id="abrirModalCategoria" type="button">+ Nueva Categoría</button>
+
+<br><br>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Imagen</th>
+      <th>Nombre</th>
+      <th>Descripción</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody id="categoriasTableBody"></tbody>
+</table>
+
+<div id="modalCategoria" style="display:none; border:1px solid black; padding:15px; margin-top:20px;">
+  <h3 id="tituloModalCategoria">Nueva Categoría</h3>
+
+  <form id="formCategoria">
+    <label>Nombre</label><br>
+    <input type="text" id="nombre" required><br><br>
+
+    <label>Descripción</label><br>
+    <textarea id="descripcion" required></textarea><br><br>
+
+    <label>URL de Imagen</label><br>
+    <input type="text" id="imagen" required><br><br>
+
+    <button type="submit">Guardar</button>
+    <button type="button" id="cerrarModalCategoria">Cancelar</button>
+  </form>
+</div>
+
+<script type="module" src="./categories.ts"></script>
+</body>
+</html>

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Food Store
 
 Proyecto web desarrollado con Vite, TypeScript, HTML y CSS.
@@ -22,6 +21,3 @@ npm run dev
 6. Abrir el enlace que aparece en la terminal:
 
 http://localhost:5173
-=======
-# ProgramacionIII_Integrador_FoodStore_FrontEnd
->>>>>>> f494a20414726c40ca34ed1f9ca99faea54790c5
